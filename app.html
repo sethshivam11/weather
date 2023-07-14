@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://kit.fontawesome.com/a48151181e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="container">
+    <div id="search-container">
+        <input type="text" name="text" id="city-input" placeholder="Enter City">
+        <a href=""><button id= "search" class="btn"><i class="fa fa-search"></i></button></a>
+        <a href=""><button id= "gps" class="btn"><i class="fa fa-map-marker"></i></button></a>
+    </div>
+    <div id="details">
+        <img src="resources/clouds.png" id="condition">
+        <div>
+        <h1 id="temp">20°C</h1>
+        <h2 id="city-name">Delhi</h2>
+    </div>
+    <div id="more">
+        <div id="humidity"><img src="resources/humidity.svg" class="more-img">50%</div>
+        <div id="wind"><img src="resources/wind.svg" class="more-img">18 km/h</div>
+    </div>
+    <div id="caption">
+    <p>Humidity</p>
+    <p>Wind Speed</p>
+    </div>
+    </div>
+</div>
+</body>
+<script src="app.js"></script>
+</html>
