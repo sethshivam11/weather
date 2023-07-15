@@ -8,6 +8,7 @@ let temp = document.getElementById('temp');
 let icon = document.getElementById('condition');
 let details = document.getElementById('details');
 let searchContainer = document.getElementById('search-container');
+let errors = document.getElementById('error');
 btn.addEventListener("click", e=>{
     e.preventDefault();
     city = document.getElementById('city-input').value;
@@ -58,6 +59,12 @@ async function fetchData(city){
     }
     catch(err){
         console.log(err);
+        console.log(err);
+        if(errors.style.display != 'block'){
+            searchContainer.style.borderBottomLeftRadius = '0px';
+            searchContainer.style.borderBottomRightRadius = '0px';
+            errors.style.display = 'block';
+        }
     }
 }
 async function fetchCity(position){
@@ -68,6 +75,7 @@ async function fetchCity(position){
         fetchData(city);
     }
     catch(err){
-        console.log(err);
+        console.log(err
+        fetchData("-1");
     }
 }
