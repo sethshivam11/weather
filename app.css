@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 :root{
-    --bg: linear-gradient(to left, rgb(122, 122, 122), rgb(190, 190, 190));
+    --bg: linear-gradient(to right, #87CEEB, #1E90FF);
 }
 body{
     background: rgb(29, 29, 29);
