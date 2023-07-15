@@ -5,7 +5,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 :root{
-    --bg: linear-gradient(to left, rgb(122, 122, 122), rgb(190, 190, 190));
+    --bg: linear-gradient(to right, #87CEEB, #1E90FF);
 }
 body{
     background: rgb(29, 29, 29);
@@ -29,9 +29,10 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 400;
+    flex-wrap: wrap;
 }
 #city-input{
-    width: 80%;
+    width: 60%;
     height: 70%;
     margin: 0 15px;
     outline: none;
@@ -52,6 +53,17 @@ body{
     border-radius: 50%;
     z-index: 2;
     cursor: pointer;
+}
+#error{
+    background: var(--bg);
+    width: 100%;
+    height: 30px;
+    color: rgb(73, 73, 73);
+    text-align: center;
+    font-size: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: none;
 }
 #details{
     min-height: 400px;
@@ -100,5 +112,11 @@ body{
     #container{
         width: 90%;
         height: 80%;
+    }
+    #city-name{
+        margin-bottom: 20px;
+    }
+    #temp{
+        margin-top: 20px;
     }
 }

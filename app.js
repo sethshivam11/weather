@@ -8,6 +8,7 @@ let temp = document.getElementById('temp');
 let icon = document.getElementById('condition');
 let details = document.getElementById('details');
 let searchContainer = document.getElementById('search-container');
+let errors = document.getElementById('error');
 btn.addEventListener("click", e=>{
     e.preventDefault();
     city = document.getElementById('city-input').value;
@@ -52,12 +53,18 @@ async function fetchData(city){
         else if(data.weather[0].main == "Snow"){
             icon.src = "resources/snow.png";
         }
+        errors.style.display = 'none';
         details.style.display = 'flex';
         searchContainer.style.borderBottomLeftRadius = '0px';
         searchContainer.style.borderBottomRightRadius = '0px';
     }
     catch(err){
         console.log(err);
+        if(errors.style.display != 'block'){
+            searchContainer.style.borderBottomLeftRadius = '0px';
+            searchContainer.style.borderBottomRightRadius = '0px';
+            errors.style.display = 'block';
+        }
     }
 }
 async function fetchCity(position){
