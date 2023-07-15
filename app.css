@@ -31,7 +31,7 @@ body{
     font-weight: 400;
 }
 #city-input{
-    width: 60%;
+    width: 80%;
     height: 70%;
     margin: 0 15px;
     outline: none;
@@ -114,15 +114,9 @@ body{
         height: 90%;
     }
     #city-name{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     #temp{
-<<<<<<< HEAD
-        margin-top: 20px;
-    }
-}
-=======
         margin-top: 10px;
     }
 }
->>>>>>> 5878677f1d413b7b548858d8af82beda5c6cca13
