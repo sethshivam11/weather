@@ -29,7 +29,6 @@ body{
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    flex-wrap: wrap;
 }
 #city-input{
     width: 60%;
