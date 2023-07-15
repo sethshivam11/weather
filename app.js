@@ -75,6 +75,7 @@ async function fetchCity(position){
         fetchData(city);
     }
     catch(err){
-        console.log(err);
+        console.log(err
+        fetchData("-1");
     }
 }

@@ -75,6 +75,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    height: fit-content;
 }
 #temp, #city-name{
     font-weight: 400;
@@ -111,12 +112,18 @@ body{
 @media only screen and (max-width: 600px){
     #container{
         width: 90%;
-        height: 80%;
+        height: 90%;
     }
     #city-name{
         margin-bottom: 20px;
     }
     #temp{
+<<<<<<< HEAD
         margin-top: 20px;
     }
 }
+=======
+        margin-top: 10px;
+    }
+}
+>>>>>>> 5878677f1d413b7b548858d8af82beda5c6cca13
