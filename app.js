@@ -53,12 +53,12 @@ async function fetchData(city){
         else if(data.weather[0].main == "Snow"){
             icon.src = "resources/snow.png";
         }
+        errors.style.display = 'none';
         details.style.display = 'flex';
         searchContainer.style.borderBottomLeftRadius = '0px';
         searchContainer.style.borderBottomRightRadius = '0px';
     }
     catch(err){
-        console.log(err);
         console.log(err);
         if(errors.style.display != 'block'){
             searchContainer.style.borderBottomLeftRadius = '0px';
