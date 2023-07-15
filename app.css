@@ -63,6 +63,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    height: fit-content;
 }
 #temp, #city-name{
     font-weight: 400;
